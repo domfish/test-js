@@ -17,7 +17,7 @@ function list() {
 }
 function removeProduct(index) {
     var employees = JSON.parse(localStorage.getItem('employees') || '[]')
-    employees.splice(index, 1,employe)
+    employees.splice(index, 1,employees)
     localStorage.setItem('employees', JSON.stringify(employees))
     // console.log(products);
     location.reload();

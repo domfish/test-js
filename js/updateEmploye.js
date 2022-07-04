@@ -12,9 +12,9 @@ function showData(){
     var index=JSON.parse(localStorage.getItem('updateEmployee')|| '')
     var employees = JSON.parse(localStorage.getItem('employees') || '[]')
     Name.value =employees[index].firstName
-    address.value =societes[index].lastName
-    email.value =societes[index].email
-    prenom.value =societes[index].adress
+    address.value =employees[index].lastName
+    email.value =employees[index].email
+    prenom.value =employees[index].adress
 }
 
 valid.addEventListener('click',(e)=>{

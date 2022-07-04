@@ -9,7 +9,7 @@ const emailReq=document.getElementById('emailReq')
 const employeesReq=document.getElementById('employeesReq')
 
 function showData(){
-    var index=JSON.parse(localStorage.getItem('updateSociete')|| '')
+    var index=JSON.parse(localStorage.getItem('updateIndex')|| '')
     var societes = JSON.parse(localStorage.getItem('societes') || '[]')
     Name.value =societes[index].companyName
     address.value =societes[index].adress
