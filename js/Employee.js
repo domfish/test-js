@@ -23,6 +23,6 @@ function removeProduct(index) {
     location.reload();
 }
 function ToUpdate(index) {
-    localStorage.setItem('updateIndex', JSON.stringify(index))
+    localStorage.setItem('updateIndexEmpl', JSON.stringify(index))
     location.href='updateEmploye.html'
 }

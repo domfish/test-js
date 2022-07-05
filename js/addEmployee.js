@@ -71,6 +71,16 @@ valid.addEventListener('click',(e)=>{
     }
 
 })
+function loadSociete(){
+    var societes=JSON.parse(localStorage.getItem('societes') || '[]')
+    societes.map(societe=>{
+        const cat=document.getElementById('search')
+        cat.innerHTML+=`
+        <option value="${societe.companyName}">                   
+        `
+        // console.log(category.nameOfCategory);
+    })
+}
 
 
 

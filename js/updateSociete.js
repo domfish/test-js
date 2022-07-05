@@ -66,7 +66,7 @@ valid.addEventListener('click',(e)=>{
     }
     if (hasError == false) {
         var societes = JSON.parse(localStorage.getItem('societes') || '[]')
-        var index=JSON.parse(localStorage.getItem('updateSociete')|| '')
+        var index=JSON.parse(localStorage.getItem('updateIndex')|| '')
         var societe = {
             companyName : societes[index].Name,
             adress:societes[index].adress,

@@ -1,5 +1,6 @@
 const Name =document.getElementById('name')
-const address=document.getElementById('adress')
+const address=document.getElementById('adresse')
+const prenom=document.createProcessingInstruction('prenom')
 const email=document.getElementById('email')
 const employees=document.getElementById('employees')
 const valid=document.getElementById('valid')
@@ -8,8 +9,9 @@ const addressReq=document.getElementById('addressReq')
 const emailReq=document.getElementById('emailReq')
 const employeesReq=document.getElementById('employeesReq')
 
+
 function showData(){
-    var index=JSON.parse(localStorage.getItem('updateEmployee')|| '')
+    var index=JSON.parse(localStorage.getItem('updateIndexEmpl')|| '')
     var employees = JSON.parse(localStorage.getItem('employees') || '[]')
     Name.value =employees[index].firstName
     address.value =employees[index].lastName
@@ -75,7 +77,7 @@ valid.addEventListener('click',(e)=>{
         }
         categories.splice(index,1,societe);
         localStorage.setItem('societes',JSON.stringify(societes))
-        location.href='dashboard.html'
+        location.href='.html'
     }
 
 
